@@ -1,0 +1,33 @@
+.fonctionnement {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  &__title {
+    margin-left: 20px;
+  }
+  &__card {
+    margin-top: 20px;
+    margin-left: 7%;
+    width: 90%;
+    @include box-shadow;
+    border-radius: 20px;
+    @include background-color;
+    height: 80px;
+  }
+  &__content {
+    width: 315px;
+    font-weight: bold;
+    position: relative;
+    right: 10px;
+    height: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    & .number {
+      font-weight: normal;
+      color: white;
+      padding: 5px 10px 5px 10px;
+      border-radius: 100%;
+      background-color: $primary-color;
+    }
+  }
+}
