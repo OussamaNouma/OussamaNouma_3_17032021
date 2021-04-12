@@ -1,0 +1,133 @@
+.menu {
+  position: relative;
+  margin-top: -65px;
+  border-radius: 40px 40px 0 0;
+  @include background-color;
+  &__title {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px 0px 20px;
+  }
+
+  &__part {
+    margin-bottom: 40px;
+    padding-left: 5%;
+    margin-top: 50px;
+    &__title {
+      border-bottom: 3px solid $tertiary-color;
+      width: 50px;
+    }
+    & .menu__card {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      display: flex;
+      @include box;
+      &__description {
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+      & .price {
+        padding-bottom: 11px;
+        align-self: flex-end;
+        padding-right: 5px;
+      }
+    }
+  }
+  & .menu__order {
+    height: 150px;
+    & .btn_principal {
+      display: block;
+      width: 200px;
+      height: 52px;
+      margin: auto;
+    }
+  }
+}
+
+.description {
+  padding-top: 10px;
+  width: 93%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 10px;
+}
+input[type="checkbox"] {
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked + .slide_check {
+  & .fa-check-circle {
+    transform: rotate(360deg);
+    transition-duration: 0.8s;
+  }
+  right: 0px;
+  transition: right 0.5s;
+}
+
+.fa-check-circle {
+  font-size: 1.4em;
+  padding: 24px 19px;
+  color: white;
+  transform: rotate(0deg);
+}
+input[type="checkbox"]:not(:checked) + .slide_check {
+  transition: right 0.8s;
+}
+.slide_check {
+  display: flex;
+  position: absolute;
+  right: -70px;
+  background: $tertiary-color;
+  height: 100%;
+  width: 70px;
+  color: green;
+}
+
+.lower-text {
+  padding-right: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+input[type="checkbox"]:checked ~ .description .upper {
+  max-width: 70%;
+  transition: max-width 0.3s;
+}
+input[type="checkbox"]:not(:checked) ~ .description .upper {
+  max-width: 100%;
+  transition: max-width 0.8s;
+}
+input[type="checkbox"]:checked ~ .description .lower-text {
+  max-width: 60%;
+  transition: max-width 0.3s;
+}
+input[type="checkbox"]:not(:checked) ~ .description .lower-text {
+  max-width: 100%;
+  transition: max-width 0.8s;
+}
+input[type="checkbox"]:checked ~ .description .lower .price {
+  transform: translateX(-60px);
+  transition: transform 0.5s;
+}
+input[type="checkbox"]:not(:checked) ~ .description .lower .price {
+  transform: translateX(0px);
+  transition: transform 0.8s;
+}
+.lower {
+  display: flex;
+  justify-content: space-between;
+}
+.upper {
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
