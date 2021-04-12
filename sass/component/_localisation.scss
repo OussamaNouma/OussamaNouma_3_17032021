@@ -12,3 +12,11 @@
     font-weight: bold;
   }
 }
+@include desktop {
+  .localisation {
+    &__element {
+      font-size: 1.5em;
+      width: 200px;
+    }
+  }
+}

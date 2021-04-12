@@ -23,11 +23,11 @@ li {
 }
 
 .localisation__element {
-  font-size: 1em;
+  font-size: 1.3em;
 }
 
 .introduction h2 {
-  font-size: 1em;
+  font-size: 1.3em;
 }
 .introduction p {
   font-size: 1.2em;
@@ -44,17 +44,17 @@ li {
 }
 
 .restaurant__description {
-  font-size: 1em;
+  font-size: 1.3em;
 }
 .restaurant .fa-heart {
-  font-size: 1em;
+  font-size: 1.3em;
 }
 .restaurant .new {
   font-size: 0.8em;
 }
 
 .footer__title {
-  font-size: 1em;
+  font-size: 1.3em;
 }
 .footer a {
   font-size: 1.1em;
@@ -70,7 +70,7 @@ li {
   font-family: Shrikhand;
 }
 .menu__part__title {
-  font-size: 1em;
+  font-size: 1.3em;
   font-weight: normal;
 }
 .menu .menu__card {
@@ -82,7 +82,7 @@ li {
 }
 
 .header--menu a {
-  font-size: 1em;
+  font-size: 1.3em;
 }
 
 .lower-text {
@@ -125,9 +125,14 @@ li {
   padding-left: 10px;
   display: block;
   color: black;
-  font-size: 1em;
+  font-size: 1.3em;
 }
 
+@media only screen and (min-width: 768px) {
+  .header h1 {
+    font-size: 3em;
+  }
+}
 .fonctionnement {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -162,6 +167,29 @@ li {
   background-color: #9356dc;
 }
 
+@media only screen and (min-width: 768px) {
+  .fonctionnement {
+    margin-top: 5px;
+    box-shadow: 0px 0px 7px black;
+  }
+  .fonctionnement__container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    flex-flow: wrap;
+  }
+  .fonctionnement__title {
+    margin-left: 0px;
+    text-align: center;
+    font-family: Shrikhand;
+    font-size: 2.5em;
+  }
+  .fonctionnement__card {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 350px;
+  }
+}
 .introduction {
   width: 100%;
   background-color: #f7f7f7;
@@ -177,6 +205,17 @@ li {
   text-align: center;
 }
 
+@media only screen and (min-width: 768px) {
+  .introduction h2 {
+    font-size: 1.9em;
+  }
+  .introduction p {
+    font-size: 1.5em;
+  }
+  .introduction .btn_principal {
+    font-size: 1.2em;
+  }
+}
 .localisation {
   background-color: rgba(0, 0, 0, 0.08);
   height: 60px;
@@ -192,6 +231,12 @@ li {
   font-weight: bold;
 }
 
+@media only screen and (min-width: 768px) {
+  .localisation__element {
+    font-size: 1.5em;
+    width: 200px;
+  }
+}
 .restaurant {
   padding-bottom: 70px;
   background-color: #f7f7f7;
@@ -239,6 +284,23 @@ li {
   left: 260px;
 }
 
+@media only screen and (min-width: 768px) {
+  .restaurant {
+    margin-top: 5px;
+  }
+  .restaurant__title {
+    margin-left: 0px;
+    text-align: center;
+    font-family: Shrikhand;
+    font-size: 2.5em;
+  }
+  .restaurant__container {
+    display: flex;
+    flex-flow: wrap;
+    width: 768px;
+    margin: auto;
+  }
+}
 .footer {
   height: 200px;
   padding-top: 30px;
@@ -262,6 +324,28 @@ li {
   padding-right: 5px;
 }
 
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding-left: 0px;
+  }
+  .footer p {
+    font-size: 2.5em;
+    text-align: center;
+  }
+  .footer ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .footer a {
+    padding-bottom: 5px;
+  }
+  .footer a:hover {
+    border-bottom: solid 2px white;
+  }
+}
 .menu {
   position: relative;
   margin-top: -65px;
@@ -317,6 +401,32 @@ li {
   margin: auto;
 }
 
+@media only screen and (min-width: 768px) {
+  .menu {
+    margin-top: -315px;
+  }
+  .menu__title__element {
+    padding-left: 30px;
+    font-size: 2.5em;
+    margin: auto;
+  }
+  .menu__part {
+    padding-left: 0;
+    width: 100%;
+  }
+  .menu__part__container {
+    display: flex;
+  }
+  .menu__part__title {
+    width: fit-content;
+    margin: auto;
+  }
+  .menu .menu__card {
+    margin: 20px auto;
+    width: 400px;
+  }
+}
+/**-------------------------------------**/
 .description {
   padding-top: 10px;
   width: 93%;

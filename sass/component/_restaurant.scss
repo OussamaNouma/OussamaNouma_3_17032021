@@ -44,3 +44,20 @@
     left: 260px;
   }
 }
+@include desktop {
+  .restaurant {
+    margin-top: 5px;
+    &__title {
+      margin-left: 0px;
+      text-align: center;
+      font-family: Shrikhand;
+      font-size: 2.5em;
+    }
+    &__container {
+      display: flex;
+      flex-flow: wrap;
+      width: 768px;
+      margin: auto;
+    }
+  }
+}

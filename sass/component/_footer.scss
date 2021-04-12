@@ -20,3 +20,25 @@
     padding-right: 5px;
   }
 }
+@include desktop {
+  .footer {
+    padding-left: 0px;
+    p {
+      font-size: 2.5em;
+      text-align: center;
+    }
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      width: 90%;
+      margin: auto;
+      margin-top: 50px;
+    }
+    a {
+      padding-bottom: 5px;
+      &:hover {
+        border-bottom: solid 2px white;
+      }
+    }
+  }
+}

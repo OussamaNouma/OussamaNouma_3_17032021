@@ -24,3 +24,10 @@
     font-size: $primary-font-size;
   }
 }
+@include desktop {
+  .header {
+    h1 {
+      font-size: 3em;
+    }
+  }
+}
