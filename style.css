@@ -427,4 +427,161 @@ input[type=checkbox]:not(:checked) ~ .description .lower .price {
   background: linear-gradient(#ff93e1, #a16be0);
 }
 
+.loader_container {
+  z-index: 5;
+  display: block;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: #16a085;
+  display: flex;
+  height: 100vh;
+  animation: display 0.4s ease-out forwards;
+  animation-delay: 2s;
+}
+
+.loader {
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  display: block;
+  position: relative;
+  margin: auto;
+}
+
+.loader-quart {
+  border-radius: 200px;
+  border: 15px solid rgba(255, 255, 255, 0.4);
+}
+
+.loader-quart::after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  bottom: -15px;
+  left: -15px;
+  border-top: 15px solid white;
+  border-radius: 200px;
+  border: 15px solid transparent;
+  border-top-color: white;
+  animation: spin 1s linear infinite;
+}
+
+.fa-heart {
+  position: absolute;
+  width: 32px;
+  height: 30px;
+  fill: url(#svg__fill__color);
+  stroke: black;
+  stroke-width: 35px;
+  z-index: 1;
+  transition: transform 0.3s;
+  transform-origin: center;
+}
+.fa-heart.empty {
+  fill: white;
+}
+.fa-heart.full {
+  stroke-width: 0;
+  transform: scale(0);
+}
+
+.heart-position {
+  position: absolute;
+  top: 215px;
+  left: 295px;
+}
+
+.heart-icon {
+  display: block;
+  position: absolute;
+  width: 42px;
+  height: 40px;
+}
+
+.heart-icon-menu {
+  display: block;
+  position: relative;
+  width: 42px;
+  height: 40px;
+}
+
+input[type=checkbox] {
+  opacity: 0;
+}
+
+input[type=checkbox]:checked + span .full {
+  transform: scale(1);
+}
+
+@keyframes slideup {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes display {
+  from {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  to {
+    opacity: 0;
+    z-index: -1;
+    pointer-events: none;
+  }
+}
+.menu__card:nth-child(1) {
+  animation-name: slideup;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.menu__card:nth-child(2) {
+  animation-name: slideup;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.menu__card:nth-child(3) {
+  animation-name: slideup;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+.menu__card:nth-child(4) {
+  animation-name: slideup;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.menu__card:nth-child(5) {
+  animation-name: slideup;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+}
+
+.menu h2 {
+  animation-name: slideup;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.menu__order {
+  animation-name: slideup;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
 /*# sourceMappingURL=style.css.map */

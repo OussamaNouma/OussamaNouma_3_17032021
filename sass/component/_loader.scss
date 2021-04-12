@@ -1,0 +1,42 @@
+.loader_container {
+  z-index: 5;
+  display: block;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: #16a085;
+  display: flex;
+  height: 100vh;
+  animation: display 0.4s ease-out forwards;
+  animation-delay: 2s;
+}
+
+.loader {
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  display: block;
+  position: relative;
+  margin: auto;
+}
+
+.loader-quart {
+  border-radius: 200px;
+  border: 15px solid rgba(255, 255, 255, 0.4);
+}
+
+.loader-quart::after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  bottom: -15px;
+  left: -15px;
+  border-top: 15px solid white;
+  border-radius: 200px;
+  border: 15px solid transparent;
+  border-top-color: white;
+  animation: spin 1s linear infinite;
+}
