@@ -1,0 +1,11 @@
+.background--image--two {
+  @include background-image("./images/restaurants/note.jpg");
+  background-position: 0 -15px;
+}
+@include desktop {
+  .background--image--two {
+    background-size: cover;
+    height: 700px;
+    background-position: center -300px;
+  }
+}

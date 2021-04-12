@@ -584,4 +584,69 @@ input[type=checkbox]:checked + span .full {
   animation-fill-mode: forwards;
 }
 
+.background--image--three {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 350px;
+  background-size: contain;
+  background-image: url("./images/restaurants/fr.jpg");
+  background-position: 0 68px;
+}
+
+@media only screen and (min-width: 768px) {
+  .background--image--three {
+    background-size: cover;
+    height: 700px;
+    background-position: center -350px;
+  }
+}
+.background--image--two {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 350px;
+  background-size: contain;
+  background-image: url("./images/restaurants/note.jpg");
+  background-position: 0 -15px;
+}
+
+@media only screen and (min-width: 768px) {
+  .background--image--two {
+    background-size: cover;
+    height: 700px;
+    background-position: center -300px;
+  }
+}
+.background--image--one {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 350px;
+  background-size: contain;
+  background-image: url("./images/restaurants/palette.jpg");
+  background-position: 0 68px;
+}
+
+@media only screen and (min-width: 768px) {
+  .background--image--one {
+    background-size: cover;
+    height: 700px;
+    background-position: center -300px;
+  }
+}
+.background--image--four {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 350px;
+  background-size: contain;
+  background-image: url("./images/restaurants/sens.jpg");
+  background-position: 0 -50px;
+}
+
+@media only screen and (min-width: 768px) {
+  .background--image--four {
+    background-size: cover;
+    height: 700px;
+    background-position: center -400px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

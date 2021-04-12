@@ -1,0 +1,11 @@
+.background--image--three {
+  @include background-image("./images/restaurants/fr.jpg");
+  background-position: 0 68px;
+}
+@include desktop {
+  .background--image--three {
+    background-size: cover;
+    height: 700px;
+    background-position: center -350px;
+  }
+}

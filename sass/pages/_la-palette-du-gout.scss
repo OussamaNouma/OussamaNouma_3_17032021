@@ -1,0 +1,11 @@
+.background--image--one {
+  @include background-image("./images/restaurants/palette.jpg");
+  background-position: 0 68px;
+}
+@include desktop {
+  .background--image--one {
+    background-size: cover;
+    height: 700px;
+    background-position: center -300px;
+  }
+}
