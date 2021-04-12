@@ -1,6 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
+}
+
+.header__title {
+  font-family: Shrikhand;
+  font-size: 2.5em;
+}
+
+* {
+  font-family: Roboto;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.localisation__element {
+  font-size: 1em;
+}
+
+.introduction h2 {
+  font-size: 1em;
+}
+.introduction p {
+  font-size: 1.2em;
+}
+
+.fonctionnement__title {
+  font-size: 1.4em;
+}
+.fonctionnement__content {
+  font-size: 1.2em;
+}
+.fonctionnement .number {
+  font-size: 0.8em;
+}
+
+.restaurant__description {
+  font-size: 1em;
+}
+.restaurant .fa-heart {
+  font-size: 1em;
+}
+.restaurant .new {
+  font-size: 0.8em;
+}
+
+.footer__title {
+  font-size: 1em;
+}
+.footer a {
+  font-size: 1.1em;
+}
+.footer__li i {
+  font-size: 1em;
+}
+
+.menu__title {
+  font-size: 1.2em;
+}
+.menu__title__element {
+  font-family: Shrikhand;
+}
+.menu__part__title {
+  font-size: 1em;
+  font-weight: normal;
+}
+.menu .menu__card {
+  font-size: 1.1em;
+}
+
+.btn_principal {
+  font-size: 1em;
+}
+
+.header--menu a {
+  font-size: 1em;
+}
+
+.lower-text {
+  font-size: 0.8em;
+}
+
+.upper {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 0.9em;
+  font-weight: bold;
 }
 
 .header {
