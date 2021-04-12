@@ -1,0 +1,46 @@
+.restaurant {
+  padding-bottom: 70px;
+  @include background-color;
+  &__title {
+    padding-left: 20px;
+    padding-top: 50px;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 30px;
+    width: 350px;
+    height: 270px;
+    background-color: white;
+    @include box-shadow;
+  }
+  &__image {
+    @include border-radius;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    object-position: center;
+  }
+  &__description {
+    padding: 10px 20px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    & div :nth-child(1) {
+      font-weight: bold;
+    }
+  }
+  .new {
+    display: inline-block;
+    width: fit-content;
+    border-radius: 2px;
+    padding: 5px 10px;
+    background-color: $tertiary-color;
+    color: #008563;
+    position: relative;
+    bottom: 240px;
+    left: 260px;
+  }
+}

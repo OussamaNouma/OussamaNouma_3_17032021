@@ -1,0 +1,22 @@
+.footer {
+  height: 200px;
+  padding-top: 30px;
+  padding-left: 30px;
+  background-color: hsl(0deg 0% 21%);
+  &__title {
+    font-family: Shrikhand;
+    color: white;
+    margin-bottom: 20px;
+  }
+  & a {
+    margin-bottom: 10px;
+    display: block;
+    color: white;
+  }
+  .fa-utensils {
+    padding-right: 10px;
+  }
+  .fa-hands-helping {
+    padding-right: 5px;
+  }
+}
