@@ -69,12 +69,12 @@
 @include sm-phone {
   .restaurant {
     &__card {
-      width: 95%;
+      width: 90%;
       .heart-position {
-        left: 265px;
+        left: 245px;
       }
       .new {
-        left: 220px;
+        left: 210px;
         top: -250px;
       }
     }

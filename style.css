@@ -307,15 +307,15 @@ li {
     margin: auto;
   }
 }
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 320px) {
   .restaurant__card {
-    width: 95%;
+    width: 90%;
   }
   .restaurant__card .heart-position {
-    left: 265px;
+    left: 245px;
   }
   .restaurant__card .new {
-    left: 220px;
+    left: 210px;
     top: -250px;
   }
 }
