@@ -35,7 +35,7 @@
   }
 }
 @mixin sm-phone {
-  @media only screen and (max-width: 370px) {
+  @media only screen and (max-width: 360px) {
     @content;
   }
 }

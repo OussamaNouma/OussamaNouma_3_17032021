@@ -307,7 +307,7 @@ li {
     margin: auto;
   }
 }
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 360px) {
   .restaurant__card {
     width: 95%;
   }
