@@ -15,6 +15,22 @@
     height: 270px;
     background-color: white;
     @include box-shadow;
+    .heart-position {
+      position: absolute;
+      top: 215px;
+      left: 295px;
+    }
+    .new {
+      display: inline-block;
+      width: fit-content;
+      border-radius: 2px;
+      padding: 5px 10px;
+      background-color: $tertiary-color;
+      color: #008563;
+      position: relative;
+      bottom: 240px;
+      left: 260px;
+    }
   }
   &__image {
     @include border-radius;
@@ -32,17 +48,6 @@
       font-weight: bold;
     }
   }
-  .new {
-    display: inline-block;
-    width: fit-content;
-    border-radius: 2px;
-    padding: 5px 10px;
-    background-color: $tertiary-color;
-    color: #008563;
-    position: relative;
-    bottom: 240px;
-    left: 260px;
-  }
 }
 @include desktop {
   .restaurant {
@@ -59,5 +64,27 @@
       width: 768px;
       margin: auto;
     }
+  }
+}
+@include sm-phone {
+  .restaurant {
+    &__card {
+      width: 95%;
+      .heart-position {
+        left: 265px;
+      }
+      .new {
+        left: 220px;
+        top: -250px;
+      }
+    }
+  }
+}
+@include xs-phone {
+  .heart-position {
+    left: 220px !important;
+  }
+  .new {
+    left: 185px !important;
   }
 }
