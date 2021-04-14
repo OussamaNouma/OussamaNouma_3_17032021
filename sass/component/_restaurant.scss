@@ -11,7 +11,8 @@
     border-radius: 20px;
     margin: auto;
     margin-top: 30px;
-    width: 350px;
+    max-width: 350px;
+    min-width: 245px;
     height: 270px;
     background-color: white;
     @include box-shadow;
@@ -82,9 +83,9 @@
 }
 @include xs-phone {
   .heart-position {
-    left: 220px !important;
+    left: 210px !important;
   }
   .new {
-    left: 185px !important;
+    left: 175px !important;
   }
 }
