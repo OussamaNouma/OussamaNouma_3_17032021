@@ -1,11 +1,11 @@
 .background--image--four {
   @include background-image("./images/restaurants/sens.jpg");
-  background-position: 0 -50px;
+  background-position: center -263px;
+  background-size: cover;
 }
 @include desktop {
   .background--image--four {
-    background-size: cover;
     height: 700px;
-    background-position: center -400px;
+    background-position: center -345px;
   }
 }

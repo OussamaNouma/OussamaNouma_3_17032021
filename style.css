@@ -770,14 +770,14 @@ input[type=checkbox]:checked + span .full {
   height: 350px;
   background-size: contain;
   background-image: url("./images/restaurants/sens.jpg");
-  background-position: 0 -50px;
+  background-position: center -263px;
+  background-size: cover;
 }
 
 @media only screen and (min-width: 768px) {
   .background--image--four {
-    background-size: cover;
     height: 700px;
-    background-position: center -400px;
+    background-position: center -345px;
   }
 }
 
