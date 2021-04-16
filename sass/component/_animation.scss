@@ -96,7 +96,7 @@ input[type="checkbox"]:checked + span .full {
 }
 
 .menu {
-  h2 {
+  .menu__part__title {
     animation-name: slideup;
     animation-duration: 1s;
     animation-fill-mode: forwards;
