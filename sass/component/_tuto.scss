@@ -55,3 +55,26 @@
     }
   }
 }
+@include phone-tablet {
+  .fonctionnement {
+    margin-top: 5px;
+    box-shadow: 0px 0px 7px black;
+    &__container {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 20px;
+      flex-flow: wrap;
+    }
+    &__title {
+      margin-left: 0px;
+      text-align: center;
+      font-family: Shrikhand;
+      font-size: 2.5em;
+    }
+    &__card {
+      margin-left: 10px;
+      margin-right: 10px;
+      width: 350px;
+    }
+  }
+}

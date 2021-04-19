@@ -31,6 +31,9 @@ li {
   }
   &__content {
     font-size: 1.2em;
+    h2 {
+      font-size: 1em;
+    }
   }
   & .number {
     font-size: 0.8em;
@@ -39,6 +42,9 @@ li {
 .restaurant {
   &__description {
     font-size: $primary-font-size;
+    h2 {
+      font-size: 1.1em;
+    }
   }
   & .fa-heart {
     font-size: $primary-font-size;

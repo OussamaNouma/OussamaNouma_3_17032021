@@ -42,3 +42,25 @@
     }
   }
 }
+@include phone-tablet {
+  .footer {
+    padding-left: 0px;
+    p {
+      font-size: 2.5em;
+      text-align: center;
+    }
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      width: 90%;
+      margin: auto;
+      margin-top: 50px;
+    }
+    a {
+      padding-bottom: 5px;
+      &:active {
+        border-bottom: solid 2px white;
+      }
+    }
+  }
+}

@@ -25,3 +25,16 @@
     }
   }
 }
+@include phone-tablet {
+  .introduction {
+    h2 {
+      font-size: 1.9em;
+    }
+    p {
+      font-size: 1.5em;
+    }
+    .btn_principal {
+      font-size: 1.2em;
+    }
+  }
+}
