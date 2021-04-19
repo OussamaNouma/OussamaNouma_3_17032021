@@ -74,12 +74,12 @@
   }
 }
 @include desktop {
-  .restaurant {
-    .heart-icon {
-      &:hover .full {
-        transform: scale(1);
-      }
+  .heart-icon {
+    &:hover .full {
+      transform: scale(1);
     }
+  }
+  .restaurant {
     margin-top: 5px;
     &__title {
       margin-left: 0px;
@@ -112,12 +112,12 @@
   }
 }
 @include phone-tablet {
-  .restaurant {
-    .heart-icon {
-      &:active .full {
-        transform: scale(1);
-      }
+  .heart-icon {
+    &:active .full {
+      transform: scale(1);
     }
+  }
+  .restaurant {
     margin-top: 5px;
     &__title {
       margin-left: 0px;

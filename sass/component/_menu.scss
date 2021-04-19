@@ -8,6 +8,34 @@
     display: flex;
     justify-content: space-between;
     padding: 30px 20px 0px 20px;
+    .fa-heart {
+      position: absolute;
+      width: 32px;
+      height: 30px;
+      fill: url(#svg__fill__color);
+      stroke: black;
+      stroke-width: 35px;
+      z-index: 1;
+      transition: transform 0.3s;
+      transform-origin: center;
+
+      &.empty {
+        fill: white;
+      }
+      &.full {
+        stroke-width: 0;
+        transform: scale(0);
+      }
+    }
+
+    .heart-icon {
+      display: block;
+      width: 42px;
+      height: 40px;
+      &:active .full {
+        transform: scale(1);
+      }
+    }
   }
 
   &__part {
@@ -21,9 +49,9 @@
     & .menu__card {
       margin-top: 20px;
       margin-bottom: 20px;
-      flex-direction: row-reverse;
       justify-content: space-between;
       display: flex;
+
       @include box;
       &__description {
         padding-left: 10px;
@@ -74,6 +102,32 @@
     }
   }
 }
+@include phone-tablet {
+  .menu {
+    &__title__element {
+      padding-left: 30px;
+      font-size: 2.5em;
+      margin: auto;
+    }
+
+    &__part {
+      padding-left: 0;
+      width: 100%;
+      &__container {
+        display: flex;
+      }
+      &__title {
+        width: fit-content;
+        margin: auto;
+      }
+    }
+    .menu__card {
+      margin: 20px auto;
+      width: 400px;
+    }
+  }
+}
+
 /**-------------------------------------**/
 .description {
   padding-top: 10px;
@@ -87,12 +141,18 @@ input[type="checkbox"] {
   opacity: 0;
 }
 
-input[type="checkbox"]:checked + .slide_check {
+.menu__card:active {
   & .fa-check-circle {
     transform: rotate(360deg);
     transition-duration: 0.8s;
   }
-  right: 0px;
+  & .slide_check {
+    right: 0px;
+    transition: right 0.5s;
+  }
+}
+.menu__card:not(:active) .slide_check {
+  right: -70px;
   transition: right 0.5s;
 }
 
@@ -102,9 +162,7 @@ input[type="checkbox"]:checked + .slide_check {
   color: white;
   transform: rotate(0deg);
 }
-input[type="checkbox"]:not(:checked) + .slide_check {
-  transition: right 0.8s;
-}
+
 .slide_check {
   display: flex;
   position: absolute;
@@ -116,44 +174,55 @@ input[type="checkbox"]:not(:checked) + .slide_check {
 }
 
 .lower-text {
+  width: 100%;
   padding-right: 10px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   display: block;
 }
-input[type="checkbox"]:checked ~ .description .upper {
-  max-width: 70%;
-  transition: max-width 0.3s;
+.menu__card:active .upper {
+  width: 70%;
+  transition: width 0.5s;
 }
-input[type="checkbox"]:not(:checked) ~ .description .upper {
-  max-width: 100%;
-  transition: max-width 0.8s;
+.menu_card:not(:active) .upper {
+  width: 100%;
+  transition: width 0.8s;
 }
-input[type="checkbox"]:checked ~ .description .lower-text {
-  max-width: 60%;
-  transition: max-width 0.3s;
+.menu__card:active .lower-text {
+  width: 60%;
+  transition: width;
+  transition-duration: 0.5s;
 }
-input[type="checkbox"]:not(:checked) ~ .description .lower-text {
-  max-width: 100%;
-  transition: max-width 0.8s;
+.menu__card:not(:active) .lower-text {
+  width: 100%;
+  transition: width;
+  transition-duration: 0.8s;
 }
-input[type="checkbox"]:checked ~ .description .lower .price {
-  transform: translateX(-60px);
+.menu__card:active .price {
+  transform: translateX(-75px);
   transition: transform 0.5s;
 }
-input[type="checkbox"]:not(:checked) ~ .description .lower .price {
+.menu__card:not(:active) .price {
   transform: translateX(0px);
-  transition: transform 0.8s;
+  transition: transform 0.5s;
 }
 .lower {
   display: flex;
   justify-content: space-between;
 }
 .upper {
+  width: 100%;
   display: block;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   display: block;
+}
+@include xs-phone {
+  .menu__card:active .lower-text {
+    width: 50%;
+    transition: width;
+    transition-duration: 0.5s;
+  }
 }
